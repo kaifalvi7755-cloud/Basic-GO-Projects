@@ -4,7 +4,7 @@ import "fmt"
 
 
 func  main(){
-	fmt.Println("it is a calculator maked my arctic hunter")
+	fmt.Println("it is a calculator made by Kaif Alvi")
 	var a float64
 	fmt.Println("give 1st number")
 	fmt.Scan(&a)
