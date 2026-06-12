@@ -2,23 +2,22 @@ package main
 
 import "fmt"
 
-func  main(){
-	fmt.Println("it is a note function\n LET'S GO")
-	note:=[]string{}
-	var want string
-	fmt.Println("start this . you can note 10 sentences")
-	
-	
-	
-	
-	for n:=1;n<=10;n++{
-		
-		var s string
-		fmt.Println("give your note")
-		fmt.Scan(&s)
-		note=append(note,s)
-		
+func main() {
+	fmt.Println("========================")
+	fmt.Println("      NOTES APP")
+	fmt.Println("========================")
 
+	note := []string{}
+
+	for n := 1; n <= 10; n++ {
+		var s string
+		fmt.Println("Enter note", n, ":")
+		fmt.Scan(&s)
+		note = append(note, s)
 	}
-	fmt.Println(want)
+
+	fmt.Println("\nYour Notes:")
+	for i := 0; i < len(note); i++ {
+		fmt.Println(i+1, ":", note[i])
+	}
 }
