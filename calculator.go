@@ -25,6 +25,8 @@ func  main(){
 		fmt.Println("answer",a/b)
 	case "avg" :
 		fmt.Println("answer",(a+b)/2)
+	default:
+		fmt.Println("this is invalid operator")
 
 	}
 }
